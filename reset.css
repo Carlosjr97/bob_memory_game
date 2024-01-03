@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Estilos padrão para todas as telas */
+body {
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media query para telas pequenas (máximo de 600px de largura) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas pequenas */
+    }
+
+    .container {
+        padding: 10px; /* Ajusta o espaçamento para telas pequenas */
+    }
+}
+
+/* Media query para telas grandes (mínimo de 1200px de largura) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 18px; /* Aumenta o tamanho da fonte para telas grandes */
+    }
+
+    .container {
+        padding: 30px; /* Ajusta o espaçamento para telas grandes */
+    }
+}
