@@ -66,6 +66,10 @@
         font-size: 2.5em; /* Aumenta a fonte para telas grandes */
     }
 
+        .start{
+        margin-top: -90%;
+    }
+
     .container {
         margin-top: -25%; /* Ajusta o espaçamento para telas grandes */
     }
