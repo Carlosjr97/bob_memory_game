@@ -1,0 +1,73 @@
+/* Estilos padrão para todas as telas */
+.start-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.start_header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.start_header img {
+    width: 100px;
+}
+
+.start_header h1 {
+    padding: 15px;
+    color: #f7d917;
+    font-size: 1.8em;
+}
+
+.start {
+    background-color: #120a8f;
+    color: white;
+    padding: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.start:disabled {
+    background-color: white;
+    color: #120a8f;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -18%;
+}
+
+/* Media query para telas pequenas (máximo de 600px de largura) */
+@media only screen and (max-width: 600px) {
+    .start_header h1 {
+        font-size: 1.5em; /* Reduz a fonte para telas pequenas */
+    }
+
+    .start{
+        margin-top: -90%;
+    }
+
+    .container {
+        margin-top: -10%; /* Ajusta o espaçamento para telas pequenas */
+    }
+}
+
+/* Media query para telas grandes (mínimo de 1200px de largura) */
+@media only screen and (min-width: 1200px) {
+    .start_header h1 {
+        font-size: 2.5em; /* Aumenta a fonte para telas grandes */
+    }
+
+    .container {
+        margin-top: -25%; /* Ajusta o espaçamento para telas grandes */
+    }
+}
+
